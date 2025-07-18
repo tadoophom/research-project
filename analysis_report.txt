@@ -1,0 +1,114 @@
+COMPREHENSIVE NLP KEYWORD CONTEXT ANALYSIS REPORT
+============================================================
+
+KEYWORD: TREATMENT
+----------------------------------------
+Total occurrences: 3
+
+Dependency-based Analysis:
+  Positive: 1
+  Negative: 0
+  Neutral: 2
+  Avg sentiment: 0.056
+
+Method Comparison:
+  Window-based avg sentiment: 0.056
+  Dependency-based avg sentiment: 0.056
+  Avg context sizes - Window: 10.3, Semantic: 4.0, Chunk: 5.7
+
+Key Patterns:
+  • Keyword appears predominantly in positive contexts (1 vs 0)
+  • Found 4 semantic relationships providing rich context
+
+Recommendations:
+  • Semantic relationships provide valuable context beyond proximity-based methods
+
+KEYWORD: PATIENT
+----------------------------------------
+Total occurrences: 8
+
+Dependency-based Analysis:
+  Positive: 4
+  Negative: 1
+  Neutral: 3
+  Avg sentiment: 0.218
+
+Method Comparison:
+  Window-based avg sentiment: 0.308
+  Dependency-based avg sentiment: 0.218
+  Avg context sizes - Window: 10.1, Semantic: 3.9, Chunk: 5.2
+
+Key Patterns:
+  • Keyword appears predominantly in positive contexts (4 vs 1)
+  • Found 9 semantic relationships providing rich context
+
+Recommendations:
+  • Semantic relationships provide valuable context beyond proximity-based methods
+
+KEYWORD: THERAPY
+----------------------------------------
+Total occurrences: 3
+
+Dependency-based Analysis:
+  Positive: 1
+  Negative: 0
+  Neutral: 2
+  Avg sentiment: 0.083
+
+Method Comparison:
+  Window-based avg sentiment: 0.083
+  Dependency-based avg sentiment: 0.083
+  Avg context sizes - Window: 8.7, Semantic: 5.7, Chunk: 7.7
+
+Key Patterns:
+  • Keyword appears predominantly in positive contexts (1 vs 0)
+  • Found 6 semantic relationships providing rich context
+
+Recommendations:
+  • Semantic relationships provide valuable context beyond proximity-based methods
+
+KEYWORD: DRUG
+----------------------------------------
+Total occurrences: 1
+
+Dependency-based Analysis:
+  Positive: 1
+  Negative: 0
+  Neutral: 0
+  Avg sentiment: 0.680
+
+Method Comparison:
+  Window-based avg sentiment: 0.683
+  Dependency-based avg sentiment: 0.680
+  Avg context sizes - Window: 11.0, Semantic: 5.0, Chunk: 8.0
+
+Key Patterns:
+  • Keyword appears predominantly in positive contexts (1 vs 0)
+  • Found 2 semantic relationships providing rich context
+
+Recommendations:
+  • Low correlation suggests dependency-based analysis provides different insights than window-based
+  • Semantic relationships provide valuable context beyond proximity-based methods
+
+KEYWORD: PROCEDURE
+----------------------------------------
+Total occurrences: 1
+
+Dependency-based Analysis:
+  Positive: 0
+  Negative: 0
+  Neutral: 1
+  Avg sentiment: -0.033
+
+Method Comparison:
+  Window-based avg sentiment: -0.033
+  Dependency-based avg sentiment: -0.033
+  Avg context sizes - Window: 10.0, Semantic: 7.0, Chunk: 10.0
+
+Key Patterns:
+  • Keyword appears in balanced positive/negative contexts
+  • Found 3 semantic relationships providing rich context
+
+Recommendations:
+  • Low correlation suggests dependency-based analysis provides different insights than window-based
+  • Semantic relationships provide valuable context beyond proximity-based methods

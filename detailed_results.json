@@ -1,0 +1,1530 @@
+{
+  "summary": {
+    "treatment": {
+      "total_occurrences": 3,
+      "dependency_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2,
+        "avg_sentiment": 0.05555555555555555
+      },
+      "window_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2,
+        "avg_sentiment": 0.05555555555555555
+      }
+    },
+    "patient": {
+      "total_occurrences": 8,
+      "dependency_analysis": {
+        "positive": 4,
+        "negative": 1,
+        "neutral": 3,
+        "avg_sentiment": 0.21781250000000002
+      },
+      "window_analysis": {
+        "positive": 5,
+        "negative": 1,
+        "neutral": 2,
+        "avg_sentiment": 0.30784722222222227
+      }
+    },
+    "therapy": {
+      "total_occurrences": 3,
+      "dependency_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2,
+        "avg_sentiment": 0.08333333333333333
+      },
+      "window_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2,
+        "avg_sentiment": 0.08333333333333333
+      }
+    },
+    "drug": {
+      "total_occurrences": 1,
+      "dependency_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0,
+        "avg_sentiment": 0.68
+      },
+      "window_analysis": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0,
+        "avg_sentiment": 0.6833333333333332
+      }
+    },
+    "procedure": {
+      "total_occurrences": 1,
+      "dependency_analysis": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1,
+        "avg_sentiment": -0.03333333333333333
+      },
+      "window_analysis": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1,
+        "avg_sentiment": -0.03333333333333333
+      }
+    }
+  },
+  "detailed_analysis": {
+    "treatment": {
+      "context_dataframe": [
+        {
+          "text_id": 0,
+          "keyword": "treatment",
+          "sentence": "The innovative cancer treatment protocol yielded outstanding results, with 85% of patients showing significant tumor reduction.",
+          "keyword_position": 3,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.5,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.16666666666666666,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.5,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.16666666666666666,
+          "dependency_context": "with, ., cancer, yielded, %, ,, protocol, innovative, results, The, outstanding, treatment",
+          "window_context": "The, innovative, cancer, treatment, protocol, yielded, outstanding, results, ,"
+        },
+        {
+          "text_id": 3,
+          "keyword": "treatment",
+          "sentence": "Advanced molecular diagnostics enabled precise identification of genetic mutations, facilitating personalized treatment approaches.",
+          "keyword_position": 12,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.0,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.0,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.0,
+          "dependency_context": ",, treatment, diagnostics, identification, personalized, ., approaches, facilitating, enabled",
+          "window_context": "genetic, mutations, ,, facilitating, personalized, treatment, approaches, ., The, targeted, therapy"
+        },
+        {
+          "text_id": 5,
+          "keyword": "treatment",
+          "sentence": "The treatment regimen was well-tolerated with manageable adverse events.",
+          "keyword_position": 19,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.0,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.0,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.0,
+          "dependency_context": "was, The, tolerated, regimen, -, ., treatment, well, with",
+          "window_context": "overall, survival, rates, ., The, treatment, regimen, was, well, -, tolerated"
+        }
+      ],
+      "dependency_analysis": [
+        {
+          "keyword_position": 3,
+          "sentence": "The innovative cancer treatment protocol yielded outstanding results, with 85% of patients showing significant tumor reduction.",
+          "window_context": [
+            "The",
+            "innovative",
+            "cancer",
+            "treatment",
+            "protocol",
+            "yielded",
+            "outstanding",
+            "results",
+            ","
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "cancer",
+                "modified": "treatment",
+                "relation": "compound"
+              },
+              {
+                "modifier": "treatment",
+                "modified": "protocol",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'innovative', 'yielded', 'protocol', 'cancer', 'treatment'}"
+          },
+          "sentence_context": [
+            "The",
+            "innovative",
+            "cancer",
+            "treatment",
+            "protocol",
+            "yielded",
+            "outstanding",
+            "results",
+            ",",
+            "with",
+            "85",
+            "%",
+            "of",
+            "patients",
+            "showing",
+            "significant",
+            "tumor",
+            "reduction",
+            "."
+          ],
+          "chunk_context": [
+            "The",
+            "innovative",
+            "cancer",
+            "treatment",
+            "protocol",
+            "yielded",
+            "results",
+            ",",
+            "with",
+            "."
+          ],
+          "context_sizes": {
+            "window": 9,
+            "semantic_cluster": 5,
+            "sentence": 19,
+            "chunk": 10
+          }
+        },
+        {
+          "keyword_position": 12,
+          "sentence": "Advanced molecular diagnostics enabled precise identification of genetic mutations, facilitating personalized treatment approaches.",
+          "window_context": [
+            "genetic",
+            "mutations",
+            ",",
+            "facilitating",
+            "personalized",
+            "treatment",
+            "approaches",
+            ".",
+            "The",
+            "targeted",
+            "therapy"
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "treatment",
+                "modified": "approaches",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'facilitating', 'approaches', 'personalized', 'treatment'}"
+          },
+          "sentence_context": [
+            "Advanced",
+            "molecular",
+            "diagnostics",
+            "enabled",
+            "precise",
+            "identification",
+            "of",
+            "genetic",
+            "mutations",
+            ",",
+            "facilitating",
+            "personalized",
+            "treatment",
+            "approaches",
+            "."
+          ],
+          "chunk_context": [
+            "facilitating",
+            "personalized",
+            "treatment",
+            "approaches"
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 4,
+            "sentence": 15,
+            "chunk": 4
+          }
+        },
+        {
+          "keyword_position": 19,
+          "sentence": "The treatment regimen was well-tolerated with manageable adverse events.",
+          "window_context": [
+            "overall",
+            "survival",
+            "rates",
+            ".",
+            "The",
+            "treatment",
+            "regimen",
+            "was",
+            "well",
+            "-",
+            "tolerated"
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "treatment",
+                "modified": "regimen",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'regimen', 'was', 'treatment'}"
+          },
+          "sentence_context": [
+            "The",
+            "treatment",
+            "regimen",
+            "was",
+            "well",
+            "-",
+            "tolerated",
+            "with",
+            "manageable",
+            "adverse",
+            "events",
+            "."
+          ],
+          "chunk_context": [
+            "The",
+            "treatment",
+            "regimen"
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 3,
+            "sentence": 12,
+            "chunk": 3
+          }
+        }
+      ]
+    },
+    "patient": {
+      "context_dataframe": [
+        {
+          "text_id": 0,
+          "keyword": "patient",
+          "sentence": "The innovative cancer treatment protocol yielded outstanding results, with 85% of patients showing significant tumor reduction.",
+          "keyword_position": 13,
+          "dep_rule_based": 1.0,
+          "dep_textblob": 0.375,
+          "dep_dependency_based": 1.0,
+          "dep_combined": 0.7916666666666666,
+          "win_rule_based": 1.0,
+          "win_textblob": 0.375,
+          "win_dependency_based": 1.0,
+          "win_combined": 0.7916666666666666,
+          "dependency_context": "showing, %, reduction, 85, tumor, patients, with, of, significant, yielded",
+          "window_context": ",, with, 85, %, of, patients, showing, significant, tumor, reduction, ."
+        },
+        {
+          "text_id": 0,
+          "keyword": "patient",
+          "sentence": "However, some patients experienced severe side effects including neutropenia and peripheral neuropathy.",
+          "keyword_position": 22,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.8,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.26666666666666666,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.8,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.26666666666666666,
+          "dependency_context": "severe, including, ,, effects, experienced, However, ., patients, neutropenia, side, some",
+          "window_context": "reduction, ., However, ,, some, patients, experienced, severe, side, effects, including"
+        },
+        {
+          "text_id": 1,
+          "keyword": "patient",
+          "sentence": "Patient compliance was high due to the simplified dosing regimen.",
+          "keyword_position": 18,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0175,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.005833333333333334,
+          "win_rule_based": 1.0,
+          "win_textblob": 0.345,
+          "win_dependency_based": 1.0,
+          "win_combined": 0.7816666666666666,
+          "dependency_context": "high, Patient, regimen, was, to, compliance, due, .",
+          "window_context": "maintaining, excellent, safety, profiles, ., Patient, compliance, was, high, due, to"
+        },
+        {
+          "text_id": 2,
+          "keyword": "patient",
+          "sentence": "Patients reported less pain and improved satisfaction scores compared to traditional open surgery techniques.",
+          "keyword_position": 15,
+          "dep_rule_based": 1.0,
+          "dep_textblob": -0.16666666666666666,
+          "dep_dependency_based": 1.0,
+          "dep_combined": 0.6111111111111112,
+          "win_rule_based": 1.0,
+          "win_textblob": -0.16666666666666666,
+          "win_dependency_based": 1.0,
+          "win_combined": 0.6111111111111112,
+          "dependency_context": "satisfaction, pain, to, less, compared, improved, reported, ., and, scores, techniques, Patients",
+          "window_context": "and, reduced, postoperative, complications, ., Patients, reported, less, pain, and, improved"
+        },
+        {
+          "text_id": 3,
+          "keyword": "patient",
+          "sentence": "The targeted therapy showed remarkable efficacy in patients with specific biomarker profiles.",
+          "keyword_position": 22,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.375,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.125,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.375,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.125,
+          "dependency_context": "The, in, specific, ., therapy, with, efficacy, profiles, targeted, remarkable, biomarker, patients, showed",
+          "window_context": "therapy, showed, remarkable, efficacy, in, patients, with, specific, biomarker, profiles, ."
+        },
+        {
+          "text_id": 4,
+          "keyword": "patient",
+          "sentence": "Investigators noted concerning safety signals requiring immediate study discontinuation and patient monitoring.",
+          "keyword_position": 28,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.0,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.0,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.0,
+          "dependency_context": "patient, and, immediate, requiring, discontinuation, signals, monitoring, study",
+          "window_context": "requiring, immediate, study, discontinuation, and, patient, monitoring, ."
+        },
+        {
+          "text_id": 6,
+          "keyword": "patient",
+          "sentence": "Breakthrough gene therapy techniques offer hope for patients with previously incurable genetic disorders.",
+          "keyword_position": 7,
+          "dep_rule_based": 0.0,
+          "dep_textblob": -0.3333333333333333,
+          "dep_dependency_based": 0.0,
+          "dep_combined": -0.1111111111111111,
+          "win_rule_based": 0.0,
+          "win_textblob": -0.5,
+          "win_dependency_based": 0.0,
+          "win_combined": -0.16666666666666666,
+          "dependency_context": "techniques, previously, disorders, therapy, with, hope, genetic, offer, patients, ., incurable, Breakthrough, for",
+          "window_context": "therapy, techniques, offer, hope, for, patients, with, previously, incurable, genetic, disorders"
+        },
+        {
+          "text_id": 7,
+          "keyword": "patient",
+          "sentence": "Early detection enabled timely intervention and prevented disease progression in high-risk patients.",
+          "keyword_position": 28,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.16,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.05333333333333334,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.16,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.05333333333333334,
+          "dependency_context": "prevented, in, risk, enabled, progression, and, -, detection, ., intervention, high, disease, patients",
+          "window_context": "progression, in, high, -, risk, patients, ."
+        }
+      ],
+      "dependency_analysis": [
+        {
+          "keyword_position": 13,
+          "sentence": "The innovative cancer treatment protocol yielded outstanding results, with 85% of patients showing significant tumor reduction.",
+          "window_context": [
+            ",",
+            "with",
+            "85",
+            "%",
+            "of",
+            "patients",
+            "showing",
+            "significant",
+            "tumor",
+            "reduction",
+            "."
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [
+              {
+                "relation": "pobj",
+                "object": "patients",
+                "verb": "of"
+              }
+            ],
+            "modifier_relations": [],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'of', 'patients', '%'}"
+          },
+          "sentence_context": [
+            "The",
+            "innovative",
+            "cancer",
+            "treatment",
+            "protocol",
+            "yielded",
+            "outstanding",
+            "results",
+            ",",
+            "with",
+            "85",
+            "%",
+            "of",
+            "patients",
+            "showing",
+            "significant",
+            "tumor",
+            "reduction",
+            "."
+          ],
+          "chunk_context": [
+            "protocol",
+            "yielded",
+            "results",
+            ",",
+            "with",
+            "patients",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 3,
+            "sentence": 19,
+            "chunk": 7
+          }
+        },
+        {
+          "keyword_position": 22,
+          "sentence": "However, some patients experienced severe side effects including neutropenia and peripheral neuropathy.",
+          "window_context": [
+            "reduction",
+            ".",
+            "However",
+            ",",
+            "some",
+            "patients",
+            "experienced",
+            "severe",
+            "side",
+            "effects",
+            "including"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "patients",
+                "verb": "experienced"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'However', 'patients', 'experienced', 'effects'}"
+          },
+          "sentence_context": [
+            "However",
+            ",",
+            "some",
+            "patients",
+            "experienced",
+            "severe",
+            "side",
+            "effects",
+            "including",
+            "neutropenia",
+            "and",
+            "peripheral",
+            "neuropathy",
+            "."
+          ],
+          "chunk_context": [
+            "However",
+            ",",
+            "some",
+            "patients",
+            "experienced",
+            "effects",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 4,
+            "sentence": 14,
+            "chunk": 7
+          }
+        },
+        {
+          "keyword_position": 18,
+          "sentence": "Patient compliance was high due to the simplified dosing regimen.",
+          "window_context": [
+            "maintaining",
+            "excellent",
+            "safety",
+            "profiles",
+            ".",
+            "Patient",
+            "compliance",
+            "was",
+            "high",
+            "due",
+            "to"
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "Patient",
+                "modified": "compliance",
+                "relation": "amod"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'compliance', 'Patient', 'was'}"
+          },
+          "sentence_context": [
+            "Patient",
+            "compliance",
+            "was",
+            "high",
+            "due",
+            "to",
+            "the",
+            "simplified",
+            "dosing",
+            "regimen",
+            "."
+          ],
+          "chunk_context": [
+            "Patient",
+            "compliance"
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 3,
+            "sentence": 11,
+            "chunk": 2
+          }
+        },
+        {
+          "keyword_position": 15,
+          "sentence": "Patients reported less pain and improved satisfaction scores compared to traditional open surgery techniques.",
+          "window_context": [
+            "and",
+            "reduced",
+            "postoperative",
+            "complications",
+            ".",
+            "Patients",
+            "reported",
+            "less",
+            "pain",
+            "and",
+            "improved"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "Patients",
+                "verb": "reported"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'compared', 'pain', 'reported', 'Patients'}"
+          },
+          "sentence_context": [
+            "Patients",
+            "reported",
+            "less",
+            "pain",
+            "and",
+            "improved",
+            "satisfaction",
+            "scores",
+            "compared",
+            "to",
+            "traditional",
+            "open",
+            "surgery",
+            "techniques",
+            "."
+          ],
+          "chunk_context": [
+            "Patients",
+            "reported",
+            "pain",
+            "compared",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 4,
+            "sentence": 15,
+            "chunk": 5
+          }
+        },
+        {
+          "keyword_position": 22,
+          "sentence": "The targeted therapy showed remarkable efficacy in patients with specific biomarker profiles.",
+          "window_context": [
+            "therapy",
+            "showed",
+            "remarkable",
+            "efficacy",
+            "in",
+            "patients",
+            "with",
+            "specific",
+            "biomarker",
+            "profiles",
+            "."
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [
+              {
+                "relation": "pobj",
+                "object": "patients",
+                "verb": "in"
+              }
+            ],
+            "modifier_relations": [],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'with', 'profiles', 'patients', 'showed', 'in'}"
+          },
+          "sentence_context": [
+            "The",
+            "targeted",
+            "therapy",
+            "showed",
+            "remarkable",
+            "efficacy",
+            "in",
+            "patients",
+            "with",
+            "specific",
+            "biomarker",
+            "profiles",
+            "."
+          ],
+          "chunk_context": [
+            "therapy",
+            "showed",
+            "efficacy",
+            "in",
+            "patients",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 5,
+            "sentence": 13,
+            "chunk": 6
+          }
+        },
+        {
+          "keyword_position": 28,
+          "sentence": "Investigators noted concerning safety signals requiring immediate study discontinuation and patient monitoring.",
+          "window_context": [
+            "requiring",
+            "immediate",
+            "study",
+            "discontinuation",
+            "and",
+            "patient",
+            "monitoring",
+            "."
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "patient",
+                "modified": "monitoring",
+                "relation": "amod"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'discontinuation', 'monitoring', 'patient'}"
+          },
+          "sentence_context": [
+            "Investigators",
+            "noted",
+            "concerning",
+            "safety",
+            "signals",
+            "requiring",
+            "immediate",
+            "study",
+            "discontinuation",
+            "and",
+            "patient",
+            "monitoring",
+            "."
+          ],
+          "chunk_context": [
+            "patient",
+            "monitoring"
+          ],
+          "context_sizes": {
+            "window": 8,
+            "semantic_cluster": 3,
+            "sentence": 13,
+            "chunk": 2
+          }
+        },
+        {
+          "keyword_position": 7,
+          "sentence": "Breakthrough gene therapy techniques offer hope for patients with previously incurable genetic disorders.",
+          "window_context": [
+            "therapy",
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "patients",
+            "with",
+            "previously",
+            "incurable",
+            "genetic",
+            "disorders"
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [
+              {
+                "relation": "pobj",
+                "object": "patients",
+                "verb": "for"
+              }
+            ],
+            "modifier_relations": [],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'disorders', 'with', 'patients', 'for'}"
+          },
+          "sentence_context": [
+            "Breakthrough",
+            "gene",
+            "therapy",
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "patients",
+            "with",
+            "previously",
+            "incurable",
+            "genetic",
+            "disorders",
+            "."
+          ],
+          "chunk_context": [
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "patients",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 4,
+            "sentence": 14,
+            "chunk": 6
+          }
+        },
+        {
+          "keyword_position": 28,
+          "sentence": "Early detection enabled timely intervention and prevented disease progression in high-risk patients.",
+          "window_context": [
+            "progression",
+            "in",
+            "high",
+            "-",
+            "risk",
+            "patients",
+            "."
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [
+              {
+                "relation": "pobj",
+                "object": "patients",
+                "verb": "in"
+              }
+            ],
+            "modifier_relations": [
+              {
+                "modifier": "risk",
+                "modified": "patients",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'prevented', 'high', 'patients', 'in', 'risk'}"
+          },
+          "sentence_context": [
+            "Early",
+            "detection",
+            "enabled",
+            "timely",
+            "intervention",
+            "and",
+            "prevented",
+            "disease",
+            "progression",
+            "in",
+            "high",
+            "-",
+            "risk",
+            "patients",
+            "."
+          ],
+          "chunk_context": [
+            "prevented",
+            "progression",
+            "in",
+            "high",
+            "-",
+            "risk",
+            "patients"
+          ],
+          "context_sizes": {
+            "window": 7,
+            "semantic_cluster": 5,
+            "sentence": 15,
+            "chunk": 7
+          }
+        }
+      ]
+    },
+    "therapy": {
+      "context_dataframe": [
+        {
+          "text_id": 3,
+          "keyword": "therapy",
+          "sentence": "The targeted therapy showed remarkable efficacy in patients with specific biomarker profiles.",
+          "keyword_position": 17,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.75,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.25,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.75,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.25,
+          "dependency_context": "remarkable, The, showed, in, ., therapy, efficacy, with, targeted, patients",
+          "window_context": "treatment, approaches, ., The, targeted, therapy, showed, remarkable, efficacy, in, patients"
+        },
+        {
+          "text_id": 5,
+          "keyword": "therapy",
+          "sentence": "Combination therapy with immunomodulatory agents and traditional chemotherapy produced synergistic effects, dramatically improving overall survival rates.",
+          "keyword_position": 1,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.0,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.0,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.0,
+          "dependency_context": "survival, and, ,, produced, overall, agents, ., therapy, chemotherapy, improving, effects, rates, Combination, traditional, immunomodulatory, synergistic, dramatically, with",
+          "window_context": "Combination, therapy, with, immunomodulatory, agents, and, traditional"
+        },
+        {
+          "text_id": 6,
+          "keyword": "therapy",
+          "sentence": "Breakthrough gene therapy techniques offer hope for patients with previously incurable genetic disorders.",
+          "keyword_position": 2,
+          "dep_rule_based": 0.0,
+          "dep_textblob": 0.0,
+          "dep_dependency_based": 0.0,
+          "dep_combined": 0.0,
+          "win_rule_based": 0.0,
+          "win_textblob": 0.0,
+          "win_dependency_based": 0.0,
+          "win_combined": 0.0,
+          "dependency_context": "therapy, hope, offer, gene, patients, Breakthrough, ., techniques, for",
+          "window_context": "Breakthrough, gene, therapy, techniques, offer, hope, for, patients"
+        }
+      ],
+      "dependency_analysis": [
+        {
+          "keyword_position": 17,
+          "sentence": "The targeted therapy showed remarkable efficacy in patients with specific biomarker profiles.",
+          "window_context": [
+            "treatment",
+            "approaches",
+            ".",
+            "The",
+            "targeted",
+            "therapy",
+            "showed",
+            "remarkable",
+            "efficacy",
+            "in",
+            "patients"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "therapy",
+                "verb": "showed"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "targeted",
+                "modified": "therapy",
+                "relation": "amod"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'targeted', 'therapy', 'efficacy', 'showed', 'in'}"
+          },
+          "sentence_context": [
+            "The",
+            "targeted",
+            "therapy",
+            "showed",
+            "remarkable",
+            "efficacy",
+            "in",
+            "patients",
+            "with",
+            "specific",
+            "biomarker",
+            "profiles",
+            "."
+          ],
+          "chunk_context": [
+            "The",
+            "targeted",
+            "therapy",
+            "showed",
+            "efficacy",
+            "in",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 5,
+            "sentence": 13,
+            "chunk": 7
+          }
+        },
+        {
+          "keyword_position": 1,
+          "sentence": "Combination therapy with immunomodulatory agents and traditional chemotherapy produced synergistic effects, dramatically improving overall survival rates.",
+          "window_context": [
+            "Combination",
+            "therapy",
+            "with",
+            "immunomodulatory",
+            "agents",
+            "and",
+            "traditional"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "therapy",
+                "verb": "produced"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "Combination",
+                "modified": "therapy",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'with', 'agents', 'effects', 'therapy', 'Combination', 'chemotherapy', 'produced'}"
+          },
+          "sentence_context": [
+            "Combination",
+            "therapy",
+            "with",
+            "immunomodulatory",
+            "agents",
+            "and",
+            "traditional",
+            "chemotherapy",
+            "produced",
+            "synergistic",
+            "effects",
+            ",",
+            "dramatically",
+            "improving",
+            "overall",
+            "survival",
+            "rates",
+            "."
+          ],
+          "chunk_context": [
+            "Combination",
+            "therapy",
+            "chemotherapy",
+            "produced",
+            "effects",
+            ",",
+            "improving",
+            "."
+          ],
+          "context_sizes": {
+            "window": 7,
+            "semantic_cluster": 7,
+            "sentence": 18,
+            "chunk": 8
+          }
+        },
+        {
+          "keyword_position": 2,
+          "sentence": "Breakthrough gene therapy techniques offer hope for patients with previously incurable genetic disorders.",
+          "window_context": [
+            "Breakthrough",
+            "gene",
+            "therapy",
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "patients"
+          ],
+          "semantic_context": {
+            "subject_relations": [],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "gene",
+                "modified": "therapy",
+                "relation": "compound"
+              },
+              {
+                "modifier": "therapy",
+                "modified": "techniques",
+                "relation": "compound"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'techniques', 'Breakthrough', 'therapy', 'gene', 'offer'}"
+          },
+          "sentence_context": [
+            "Breakthrough",
+            "gene",
+            "therapy",
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "patients",
+            "with",
+            "previously",
+            "incurable",
+            "genetic",
+            "disorders",
+            "."
+          ],
+          "chunk_context": [
+            "Breakthrough",
+            "gene",
+            "therapy",
+            "techniques",
+            "offer",
+            "hope",
+            "for",
+            "."
+          ],
+          "context_sizes": {
+            "window": 8,
+            "semantic_cluster": 5,
+            "sentence": 14,
+            "chunk": 8
+          }
+        }
+      ]
+    },
+    "drug": {
+      "context_dataframe": [
+        {
+          "text_id": 4,
+          "keyword": "drug",
+          "sentence": "Despite initial promising results, the experimental drug failed to meet primary endpoints in phase III trials.",
+          "keyword_position": 7,
+          "dep_rule_based": 1.0,
+          "dep_textblob": 0.04000000000000001,
+          "dep_dependency_based": 1.0,
+          "dep_combined": 0.68,
+          "win_rule_based": 1.0,
+          "win_textblob": 0.05000000000000002,
+          "win_dependency_based": 1.0,
+          "win_combined": 0.6833333333333332,
+          "dependency_context": "results, to, endpoints, promising, failed, the, primary, initial, ,, ., drug, in, meet, Despite, experimental",
+          "window_context": "promising, results, ,, the, experimental, drug, failed, to, meet, primary, endpoints"
+        }
+      ],
+      "dependency_analysis": [
+        {
+          "keyword_position": 7,
+          "sentence": "Despite initial promising results, the experimental drug failed to meet primary endpoints in phase III trials.",
+          "window_context": [
+            "promising",
+            "results",
+            ",",
+            "the",
+            "experimental",
+            "drug",
+            "failed",
+            "to",
+            "meet",
+            "primary",
+            "endpoints"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "drug",
+                "verb": "failed"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "experimental",
+                "modified": "drug",
+                "relation": "amod"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'Despite', 'experimental', 'drug', 'meet', 'failed'}"
+          },
+          "sentence_context": [
+            "Despite",
+            "initial",
+            "promising",
+            "results",
+            ",",
+            "the",
+            "experimental",
+            "drug",
+            "failed",
+            "to",
+            "meet",
+            "primary",
+            "endpoints",
+            "in",
+            "phase",
+            "III",
+            "trials",
+            "."
+          ],
+          "chunk_context": [
+            "Despite",
+            ",",
+            "the",
+            "experimental",
+            "drug",
+            "failed",
+            "meet",
+            "."
+          ],
+          "context_sizes": {
+            "window": 11,
+            "semantic_cluster": 5,
+            "sentence": 18,
+            "chunk": 8
+          }
+        }
+      ]
+    },
+    "procedure": {
+      "context_dataframe": [
+        {
+          "text_id": 2,
+          "keyword": "procedure",
+          "sentence": "The minimally invasive surgical procedure resulted in faster recovery times and reduced postoperative complications.",
+          "keyword_position": 4,
+          "dep_rule_based": 0.0,
+          "dep_textblob": -0.1,
+          "dep_dependency_based": 0.0,
+          "dep_combined": -0.03333333333333333,
+          "win_rule_based": 0.0,
+          "win_textblob": -0.1,
+          "win_dependency_based": 0.0,
+          "win_combined": -0.03333333333333333,
+          "dependency_context": "resulted, reduced, recovery, ., procedure, minimally, and, The, complications, surgical, times, in, postoperative, invasive",
+          "window_context": "The, minimally, invasive, surgical, procedure, resulted, in, faster, recovery, times"
+        }
+      ],
+      "dependency_analysis": [
+        {
+          "keyword_position": 4,
+          "sentence": "The minimally invasive surgical procedure resulted in faster recovery times and reduced postoperative complications.",
+          "window_context": [
+            "The",
+            "minimally",
+            "invasive",
+            "surgical",
+            "procedure",
+            "resulted",
+            "in",
+            "faster",
+            "recovery",
+            "times"
+          ],
+          "semantic_context": {
+            "subject_relations": [
+              {
+                "relation": "nsubj",
+                "subject": "procedure",
+                "verb": "resulted"
+              }
+            ],
+            "object_relations": [],
+            "modifier_relations": [
+              {
+                "modifier": "invasive",
+                "modified": "procedure",
+                "relation": "amod"
+              },
+              {
+                "modifier": "surgical",
+                "modified": "procedure",
+                "relation": "amod"
+              }
+            ],
+            "complement_relations": [],
+            "coordination_relations": [],
+            "semantic_cluster": "{'invasive', 'surgical', 'procedure', 'resulted', 'minimally', 'complications', 'in'}"
+          },
+          "sentence_context": [
+            "The",
+            "minimally",
+            "invasive",
+            "surgical",
+            "procedure",
+            "resulted",
+            "in",
+            "faster",
+            "recovery",
+            "times",
+            "and",
+            "reduced",
+            "postoperative",
+            "complications",
+            "."
+          ],
+          "chunk_context": [
+            "The",
+            "minimally",
+            "invasive",
+            "surgical",
+            "procedure",
+            "resulted",
+            "in",
+            "and",
+            "complications",
+            "."
+          ],
+          "context_sizes": {
+            "window": 10,
+            "semantic_cluster": 7,
+            "sentence": 15,
+            "chunk": 10
+          }
+        }
+      ]
+    }
+  },
+  "method_comparison": {
+    "treatment": {
+      "traditional_window": {
+        "avg_sentiment": 0.05555555555555555,
+        "sentiment_variance": 0.009259259259259259
+      },
+      "dependency_based": {
+        "avg_sentiment": 0.05555555555555555,
+        "sentiment_variance": 0.009259259259259259
+      },
+      "context_sizes": {
+        "avg_window_size": 10.333333333333334,
+        "avg_semantic_size": 4.0,
+        "avg_chunk_size": 5.666666666666667
+      }
+    },
+    "patient": {
+      "traditional_window": {
+        "avg_sentiment": 0.30784722222222227,
+        "sentiment_variance": 0.13862781635802468
+      },
+      "dependency_based": {
+        "avg_sentiment": 0.21781250000000002,
+        "sentiment_variance": 0.10323069747574955
+      },
+      "context_sizes": {
+        "avg_window_size": 10.125,
+        "avg_semantic_size": 3.875,
+        "avg_chunk_size": 5.25
+      }
+    },
+    "therapy": {
+      "traditional_window": {
+        "avg_sentiment": 0.08333333333333333,
+        "sentiment_variance": 0.020833333333333336
+      },
+      "dependency_based": {
+        "avg_sentiment": 0.08333333333333333,
+        "sentiment_variance": 0.020833333333333336
+      },
+      "context_sizes": {
+        "avg_window_size": 8.666666666666666,
+        "avg_semantic_size": 5.666666666666667,
+        "avg_chunk_size": 7.666666666666667
+      }
+    },
+    "drug": {
+      "traditional_window": {
+        "avg_sentiment": 0.6833333333333332,
+        "sentiment_variance": NaN
+      },
+      "dependency_based": {
+        "avg_sentiment": 0.68,
+        "sentiment_variance": NaN
+      },
+      "context_sizes": {
+        "avg_window_size": 11.0,
+        "avg_semantic_size": 5.0,
+        "avg_chunk_size": 8.0
+      }
+    },
+    "procedure": {
+      "traditional_window": {
+        "avg_sentiment": -0.03333333333333333,
+        "sentiment_variance": NaN
+      },
+      "dependency_based": {
+        "avg_sentiment": -0.03333333333333333,
+        "sentiment_variance": NaN
+      },
+      "context_sizes": {
+        "avg_window_size": 10.0,
+        "avg_semantic_size": 7.0,
+        "avg_chunk_size": 10.0
+      }
+    }
+  },
+  "insights": {
+    "treatment": {
+      "patterns": [
+        "Keyword appears predominantly in positive contexts (1 vs 0)",
+        "Found 4 semantic relationships providing rich context"
+      ],
+      "recommendations": [
+        "Semantic relationships provide valuable context beyond proximity-based methods"
+      ],
+      "statistical_observations": [
+        "Correlation between dependency and window methods: 1.000"
+      ]
+    },
+    "patient": {
+      "patterns": [
+        "Keyword appears predominantly in positive contexts (4 vs 1)",
+        "Found 9 semantic relationships providing rich context"
+      ],
+      "recommendations": [
+        "Semantic relationships provide valuable context beyond proximity-based methods"
+      ],
+      "statistical_observations": [
+        "Correlation between dependency and window methods: 0.688"
+      ]
+    },
+    "therapy": {
+      "patterns": [
+        "Keyword appears predominantly in positive contexts (1 vs 0)",
+        "Found 6 semantic relationships providing rich context"
+      ],
+      "recommendations": [
+        "Semantic relationships provide valuable context beyond proximity-based methods"
+      ],
+      "statistical_observations": [
+        "Correlation between dependency and window methods: 1.000"
+      ]
+    },
+    "drug": {
+      "patterns": [
+        "Keyword appears predominantly in positive contexts (1 vs 0)",
+        "Found 2 semantic relationships providing rich context"
+      ],
+      "recommendations": [
+        "Low correlation suggests dependency-based analysis provides different insights than window-based",
+        "Semantic relationships provide valuable context beyond proximity-based methods"
+      ],
+      "statistical_observations": [
+        "Correlation between dependency and window methods: 0.000"
+      ]
+    },
+    "procedure": {
+      "patterns": [
+        "Keyword appears in balanced positive/negative contexts",
+        "Found 3 semantic relationships providing rich context"
+      ],
+      "recommendations": [
+        "Low correlation suggests dependency-based analysis provides different insights than window-based",
+        "Semantic relationships provide valuable context beyond proximity-based methods"
+      ],
+      "statistical_observations": [
+        "Correlation between dependency and window methods: 0.000"
+      ]
+    }
+  }
+}
